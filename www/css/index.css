@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');body, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --laranja: #ff8906;
+    --laranja-escuro: #f25f4c;
+    --azul-marinho: #0f0e17;
+    --lilas:#a7a9be;
+    --branco: #fff;
+}
+
+.navbar{
+    display: flex;
+    width: 1;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--laranja);
+    background-color: var(--azul-marinho);
+    padding: 0 20px;
+    color: var(--branco);
+    font-family: 'Bebas Neue';
+}
+
+.page{
+    background-color: var(--azul-marinho);
+}
+
+.links a{
+
+    font-size: 13px;
+    font-weight: 400;
+    margin-right: 10px ;
+    color: var(--branco);
+
+}
+
+.page-content{
+    background-color: var(--azul-marinho);
+    font-family:'inter' ;
+    margin-top: 4%;
+}
+
+.block{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    margin: auto;
+    flex-wrap: wrap;
+    max-width: 90%;
+    padding-bottom: 40px;
+}
+.span-nome{
+    color: var(--laranja);
+}
+
+.span-home{
+    color: gray;
+    font-size: 20px;
+    white-space: wrap;
+}
+
+.container-texto{
+    flex: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    font-weight: 900;
+    color: var(--branco);
+    
+}
+
+.img{
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img img{
+    height: 100%;
+    width: 100%;
+}
+
+.botoes button{
+    border: none;
+    padding: 15px;
+    border-radius: 20px;
+    font-family:'inter' ;
+    font-weight:500;
+    color: var(--branco);
+    background-color: var(--laranja);
+}

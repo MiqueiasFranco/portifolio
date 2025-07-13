@@ -1,0 +1,59 @@
+
+:root{
+    --laranja: #ff8906;
+    --laranja-escuro: #f25f4c;
+    --azul-marinho: #0f0e17;
+    --lilas:#a7a9be;
+    --branco: #fff;
+}
+.container-projetos{
+    height: 100%;
+}
+
+.projeto{
+    position: relative;
+    border: 1px solid red;
+    height:30%;
+
+}
+.img{
+    height: 100px;
+    width: 100%;
+    border: 1px solid orange;
+}
+.img img{
+}
+
+.descricao{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.nome-projeto{
+    position: absolute;
+    top: 0;
+}
+
+.lista-tecnologia{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: auto;
+    width: 100px;
+    top: 50%;
+    left: 30%;
+    transform: translate(-10%);
+    list-style: none;
+    font-size: 12px;
+    font-family: 'bebas neue';
+    color:var(--branco) ;
+    border: 1px solid var(--branco);
+}
+
