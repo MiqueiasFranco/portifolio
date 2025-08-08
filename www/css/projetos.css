@@ -5,55 +5,112 @@
     --azul-marinho: #0f0e17;
     --lilas:#a7a9be;
     --branco: #fff;
-}
-.container-projetos{
-    height: 100%;
+    --gelo: #f1f1f1;
+
+    
 }
 
-.projeto{
-    position: relative;
-    border: 1px solid red;
-    height:30%;
-
+.navtop {
+    margin-top: 30px;
+    margin-left: 40px;
+    font-family: 'bebas neue';
+    font-size: 20px;
+    text-decoration: none;
 }
-.img{
-    height: 100px;
+
+.navtop a{
+        color: var(--laranja);
+}
+.container-projeto{
+    justify-content: space-between;
+    padding-top: 3%;
+    flex-wrap: wrap;
+    height: auto;
     width: 100%;
-    border: 1px solid orange;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
-.img img{
+.projeto{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    flex: 50%;
+    margin-bottom: 10px;
+    list-style: none;
+    border: 1px solid orange;
+    border-radius: 10px;
 }
 
-.descricao{
-    position: absolute;
+.img-projeto {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
+    background-color: var(--gelo);
+    border-radius: 10px;
     width: 100%;
-    top: 50%;
+}
+.img-projeto img {
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.descricao-projeto{
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    background-color: var(--azul-marinho);
+    height: 100%;
+    width: 100%;
+    border: 1px solid orange;
+    border-radius: 20px 20px 0 0;
+    transition: 0.5s;
+    color: var(--branco);
+    font-size: 10px;
+}
+
+.li-title{
+    font-weight: 600;
+}
+
+li{
+    font-weight: 300;
+}
+
+.projeto:hover .descricao-projeto{
+    margin-top: -46%
+}
+
+.descricao-projeto a{
+    position: absolute;
+    text-decoration: none;
+    color: #f1f1f1;
+    background: #f25f4c;
+    border-radius: 10px;
+    font-weight: 700;
+    margin-top: -20px;
+    padding: 5px;
     left: 50%;
-    transform: translate(-50%,-50%);
+    top: 95%;
+    transform: translate(-50%);
 }
 
-.nome-projeto{
-    position: absolute;
-    top: 0;
+@media(min-width:990px){
+    .projeto{
+        
+        flex: 30%;
+        max-width: 30%;
+        height: 200px;
+        
+    }
+    .descricao-projeto{
+        height: 200px;
+        width: 100%;
+    }
+    .projeto:hover .descricao-projeto{
+        margin-top: -50%;
+    }
 }
-
-.lista-tecnologia{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    height: auto;
-    width: 100px;
-    top: 50%;
-    left: 30%;
-    transform: translate(-10%);
-    list-style: none;
-    font-size: 12px;
-    font-family: 'bebas neue';
-    color:var(--branco) ;
-    border: 1px solid var(--branco);
-}
-

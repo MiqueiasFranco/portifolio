@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="lib/framework7-bundle.min.css">
     <!-- CSS PERSONALIZADO PARA MENU-->
     <link rel="stylesheet" href="css/projetos.css">
+    <link rel="stylesheet" href="css/index.css">
     <!--Ícones Material Design-->
     <link rel="stylesheet" href="css/materialdesignicons.min.css">
 
@@ -30,28 +31,68 @@
             <!-- Initial Page, "data-name" contains page name -->
             <div data-name="projetos" class="page">
 
-
+                <div class="navtop">
+                    <a href="/index/"><< voltar</a>
+                </div>
                 <!-- Scrollable page content -->
                 <div class="page-content">
                     <div class="block">
-                        <div class="container-projetos">
-                            <div class="projeto">
-                                <div class="img">
-                                    <img src="img/default.png" alt="">
+                            <div class="container-projeto margin-top row display-flex align-items-center">
+                                
+                                <div class="projeto">
+                                    <div class="img-projeto">
+                                        <img src="img/home.png" alt="">
+                                    </div>
+                                    <div class="descricao-projeto">
+                                        <p class="nome-projeto"><strong>Landing Page Barbeiros</strong></p>
+                                        <div  class="lista-tecnologia">
+                                            <li class="li-title">TECNOLOGIAS:</li>
+                                            <li>Typescript</li>
+                                            <li>Angular</li>
+                                            <li>CSS</li>
+                                        </div>
+                                        <a href="https://landing-page-barbeiros.vercel.app" onclick="window.open(this.href, '_system'); return false;">Visitar</a>
+                                    </div>
                                 </div>
-                                <div class="descricao">
-                                    <p class="nome-projeto">nome projeto</p>
-                                    <ul class="lista-tecnologia">
-                                        <p>Tecnologias:</p>
-                                        <li>javascript</li>
-                                        <li>HTML5</li>
-                                        <li>CSS3</li>
-                                        <li>Framework 7</li>
-                                    </ul>
+                                <div class="projeto">
+                                    <div class="img-projeto">
+                                        <img src="img/telainicial.png" alt="">
+                                    </div>
+                                    <div class="descricao-projeto">
+                                        <p class="nome-projeto"><strong>FrancoTech</strong></p>
+                                        <p class="nome-projeto">App ecommerce, aplicação híbrida (web,android)</p>
+                                        <div  class="lista-tecnologia">
+                                            <li class="li-title">TECNOLOGIAS:</li>
+                                            <li>JAVASCRIPT</li>
+                                            <li>HTML5</li>
+                                            <li>CSS3</li>
+                                            <li>FRAMEWORK 7</li>
+                                            <li>Cordova</li>
+                                        </div>
+                                        <a href="https://franco-tech.vercel.app/" onclick="window.open(this.href, '_system'); return false;">Visitar</a>
+                                    </div>
                                 </div>
-                            </div>
-                            
-                        </div>
+                                <div class="projeto">
+                                    <div class="img-projeto">
+                                        <img src="img/cadastro.png" alt="">
+                                    </div>
+                                    <div class="descricao-projeto">
+                                        <p class="nome-projeto"><strong>Kelly Dias Agendamento</strong></p>
+                                        <p>Tela de Agendamento Simples</p>
+                                        <div  class="lista-tecnologia">
+                                            <li class="li-title">TECNOLOGIAS:</li>
+                                            <li>Typescript</li>
+                                            <li>Angular</li>
+                                            <li>CSS3</li>
+                                        </div>
+                                        <a href="https://kelly-dias-agendamento.vercel.app/" onclick="window.open(this.href, '_system'); return false;">Visitar</a>
+
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>            
+                        
                     </div>
                 </div>
             </div>
@@ -63,7 +104,6 @@
 	<script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>	
     <!-- Roteamento do app-->
     <script type="text/javascript" src="js/routes.js"></script>
-    <script src="cordova.js"></script>
 </body>
 
 </html>
