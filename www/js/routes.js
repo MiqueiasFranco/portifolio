@@ -30,7 +30,7 @@ var app = new Framework7({
 		},
 		pageInit: function (event, page) {
 		// fazer algo quando a página for inicializada
-
+      app.views.main.router.navigate('/sobre/')
 		},
 		pageBeforeRemove: function (event, page) {
 		// fazer algo antes da página ser removida do DOM
@@ -57,8 +57,8 @@ var app = new Framework7({
 	  }
     },
     {
-      path: '/link3/',
-      url: 'link3.html',
+      path: '/sobre/',
+      url: 'sobre.html',
       animate: false,
 	  on: {
 		pageBeforeIn: function (event, page) {
@@ -75,6 +75,7 @@ var app = new Framework7({
 		},
 	  }
     },
+
   ],
   // ... other parameters
 });

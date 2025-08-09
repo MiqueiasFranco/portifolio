@@ -10,7 +10,7 @@ body{
 :root{
     --laranja: #ff8906;
     --laranja-escuro: #f25f4c;
-    --azul-marinho: #0f0e17;
+    --azul-marinho: #121414;
     --lilas:#a7a9be;
     --branco: #fff;
 }
@@ -28,6 +28,10 @@ body{
     margin-bottom: -10%;
 }
 
+.span-nav{
+    color: var(--laranja);
+}
+
 .page{
     background-color: var(--azul-marinho);
 }
@@ -38,16 +42,17 @@ body{
     font-weight: 400;
     margin-right: 10px ;
     color: var(--branco);
-
+    border-bottom: 1px solid #ff8906;
 }
 
 .page-content-index{
-    background-color: var(--azul-marinho);
+    background-color:var(--azul-marinho);
     font-family:'inter' ;
     margin-top: 20%;
 }
 
 .block{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -82,10 +87,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 300px;
+   
 }
 .img img{
     height: 100%;
     width: 100%;
+    animation: flutuar 4s ease-in-out infinite;
+    
 }
 
 .botoes button{
@@ -94,12 +103,45 @@ body{
     border-radius: 20px;
     font-family:'inter' ;
     font-weight:500;
-    color: var(--branco);
     background-color: var(--laranja);
+}
+a{
+    text-decoration: none;
+    color: var(--branco);
+
+}
+
+.whatsapp{
+    position: absolute;
+    text-decoration: none;
+    color: #fff;
+    left: 95%;
+    top: 90%;
+    background-color: #2cb67d;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    transition: .5s ease-in-out;
+}
+
+.whatsapp:hover{
+    scale: 1.2;
 }
 
 @media (min-width:990px){
     .page-content-index{ 
-        margin-top: 5%;
+        margin-top: 15%;
     }
+    .img{
+        height: 400px;
+    }
+}
+
+
+
+
+@keyframes flutuar{
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-12px); } /* sobe 12px */
+    100% { transform: translateY(0); }
 }

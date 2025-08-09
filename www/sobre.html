@@ -14,7 +14,8 @@
     <!-- Path to Framework7 Library Bundle CSS -->
     <link rel="stylesheet" href="lib/framework7-bundle.min.css">
     <!-- CSS PERSONALIZADO PARA MENU-->
-    <link rel="stylesheet" href="css/personalizado.css">
+    <link rel="stylesheet" href="css/projetos.css">
+    <link rel="stylesheet" href="css/sobre.css">
     <!--Ícones Material Design-->
     <link rel="stylesheet" href="css/materialdesignicons.min.css">
 
@@ -28,20 +29,27 @@
         <!-- Your main view, should have "view-main" class -->
         <div class="view view-main">
             <!-- Initial Page, "data-name" contains page name -->
-            <div data-name="link3" class="page">
+            <div data-name="sobre" class="page">
 
-                <!-- Top Navbar -->
-                <div class="navbar">
-                    <div class="navbar-bg"></div>
-                    <div class="navbar-inner justify-content-center">
-                        <div class="title ">Link 3</div>
-                    </div>
+                <div class="navtop">
+                    <a href="/index/">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+                        </svg>
+                    </a>
                 </div>
-
                 <!-- Scrollable page content -->
                 <div class="page-content">
                     <div class="block">
-                        Conteúdo do link 3
+                        <section class="sobre">
+                            <h4>SOBRE MIM</h4>
+                            <div class="biografia">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. A voluptate inventore beatae vel ullam iusto reiciendis 
+                                    hic reprehenderit sit dolore nostrum ducimus fugiat explicabo molestiae cupiditate, tenetur iste magni dolorem.
+                                </p>
+                            </div>
+                        </section>
                     </div>
                 </div>
             </div>
@@ -53,7 +61,6 @@
 	<script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>	
     <!-- Roteamento do app-->
     <script type="text/javascript" src="js/routes.js"></script>
-    <script src="cordova.js"></script>
 </body>
 
 </html>
